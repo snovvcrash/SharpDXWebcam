@@ -83,7 +83,14 @@ namespace SharpDXWebcam
                 h =>
                 {
                     h.AdditionalNewLineAfterOption = false;
-                    h.Heading = "Utilizing the DirectX and DShowNET assemblies to record video from the host's webcam.";
+                    h.Heading = @"
+   ______                 ___  _  ___      __    __
+  / __/ /  ___ ________  / _ \| |/_/ | /| / /__ / /  _______ ___ _
+ _\ \/ _ \/ _ `/ __/ _ \/ // />  < | |/ |/ / -_) _ \/ __/ _ `/  ' \
+/___/_//_/\_,_/_/ / .__/____/_/|_| |__/|__/\__/_.__/\__/\_,_/_/_/_/
+                 /_/                                               ";
+                    h.AutoVersion = false;
+                    h.MaximumDisplayWidth = 120;
                     h.Copyright = "";
                     return HelpText.DefaultParsingErrorsHandler(result, h);
                 },
