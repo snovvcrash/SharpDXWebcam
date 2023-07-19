@@ -104,11 +104,9 @@ namespace SharpDXWebcam
             Filters filters = new Filters();
             if (filters.AudioInputDevices != null && filters.AudioInputDevices.Count > index)
                 return filters.AudioInputDevices[index];
-            else
-            {
-                Console.WriteLine("[!] There are no audio inputs");
-                return null;
-            }
+
+            Console.WriteLine("[!] There are no audio inputs");
+            return null;
         }
 
         static Filter GetDXVideoInput(int index)
@@ -116,11 +114,9 @@ namespace SharpDXWebcam
             Filters filters = new Filters();
             if (filters.VideoInputDevices != null && filters.VideoInputDevices.Count > index)
                 return filters.VideoInputDevices[index];
-            else
-            {
-                Console.WriteLine("[!] There are no video inputs");
-                return null;
-            }
+
+            Console.WriteLine("[!] There are no video inputs");
+            return null;
         }
 
         static Filter GetDXAudioCompression(string pattern)
